@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+background-color: #F9F9F9;
+font-family: "Montserrat", sans-serif;
+}
+img{
+width: 100%;
+}
+.container{
+width: min(90% ,1120px);
+margin-inline: auto;
+}
+header{
+height: 5rem;
+background-color: #fff;
+cursor: pointer;
+position: relative;
+
+}
+.menu{
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.menu h1 a{
+font-size: 1.625rem;
+font-weight: 700; 
+text-decoration: none;
+color: #000;
+}
+
+
+.menu h1 a:hover{
+color: #f44749;
+}
+
+
+.menu-links{
+display: flex;
+align-items: center;
+gap: 4rem;
+}
+.menu-links li{
+list-style: none;
+}
+.menu-links li a{
+text-decoration: none;
+font-size: 1.125rem;
+color:black;
+}
+.menu-links .active{
+color: #f44749;
+
+}
+.menu-links li a:hover{
+color: #f44749;
+}
+.btn{
+background-color: #dc3545;
+border: none;
+padding: 10px 2rem;
+color: white;
+border-radius: 4px;
+font-weight: 400;
+line-height: 1.5rem;
+font-size: 1.125rem;
+cursor: pointer;
+margin-right: -90px;
+}
+.btn:hover{
+background-color:#c02e3d;
+}
+.humburger{
+display: none;
+}
+.overlay{
+background-image:linear-gradient(rgba(255, 255, 255, 0),rgba(0, 0, 0, 0.962)), url(kitchenbg.jpg);
+height: 60vh;
+width: 100vw;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+margin-top: -90px;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+}
+.content{
+position: relative;
+top: 180px;
+text-align: center;
+z-index: 2;
+color: rgb(245, 245, 245);
+font-size: 35px;
+}
+.content strong{
+font-size: 16px;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-weight: 600;
+}
+.content1{
+display: flex;
+
+}
+.row{
+display:grid;
+}
+.content1h4{
+margin-bottom: 1rem;
+left: 0;
+}
+.team{
+position: relative;
+top: 100px;
+background-color:rgba(250, 235, 215, 0.178)
+}
+.container3{
+display: flex;
+flex-direction: row;
+gap: 20px;
+position: relative;
+top: 30px;
+}
+#teamhead{
+position: relative;
+top: 50px;
+left: 100px;
+font-size: 40px;
+}
+.ournews{
+display: flex;
+margin-top: 100px;
+justify-content: space-around;
+
+}
+#ourimg{
+object-fit: cover;
+display: block;
+margin: 0 auto;
+max-width: 450px;
+max-height: 450px;
+}
+.ourimg1{
+border-radius: 100%;
+}
+.subscribeform{
+margin-top: 80px;
+font-size: 18px;
+}
+#formcon{
+    opacity: 0.7;
+}
+.form-control{
+    display: block;
+  width: 350px;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: .25rem;
+}
+.custom-form #subscribe{
+    background-color: black;
+    color: white;
+}
+#formsign{
+    font-size: 20px;
+}
+.ourcontainer{
+display: flex;
+position: relative;
+top: 50px;
+}
+.para1{
+font-size: 30px;
+}
+.para2{
+padding-right: 150px;
+margin-left: 100px;
+position: relative;
+right: -180px;
+}
+footer{
+margin-top: 10rem;
+height: 90vh;
+background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.9)),url("https://www.tooplate.com/templates/2129_crispy_kitchen/images/daan-evers-tKN1WXrzQ3s-unsplash.jpg")center/cover no-repeat;
+}
+.footer-site{
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+color: #fff;
+gap: 5rem;
+}
+.footer-site h4{
+font-size: 1.5rem;
+}
+.footer-grid{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+}
+.footer-grid h6{
+font-size:1.375rem;
+color: #fff;
+margin-bottom: 2rem;
+}
+.footer-grid p{
+color: #AAA;
+font-size: 1.125rem;
+font-weight: 300;
+margin-bottom: 1rem;
+}
+.footer-grid button{
+background-color: #212529;
+color: #AAA;
+cursor:pointer;
+}
+.footer-grid button:hover{
+color: #fff;
+background-color: #212529;
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="storystyle.css">
+</head>
+<body>
+    <header>
+        <nav class="menu container">
+            <div class="humburger">
+                <i class="fa fa-bars" data-visible="true"></i>
+                <i class="fa fa-close" data-visible="false"></i>
+            </div>
+            <h1><a href="/">Crispy Kitchen</a></h1>
+            <ul class="menu-links" data-visible="false" >
+                <li ><a href="crispy kitchen.html" class="active">Home</a></li>
+                <li><a href="story.html">Story</a></li>
+                <li><a href="ourmenu.html">Menu</a></li>
+                <li><a href="#">Our Updates</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <button class="btn">Reservation</button>
+        </nav>
+    </header>
+
+    <div class="content">
+        <h1>Kitchen's Story</h1>
+
+        <strong>this is how our kitchen evolved in new digital era</strong>
+    </div>
+
+</div>
+</div>
+
+<div class="overlay"></div>
+
+<div class="ourcontainer">
+        <div class="content1">
+            <h4 class="para1">Crispy Kitchen is the latest 5 HTML and CSS template provided by Tooplate website.</h4>
+        </div>
+        
+
+        <div class="para2">
+        
+            <p>Since this website template is 100% free to use, you can edit and apply it for your commercial restaurant websites. There are 6 HTML pages included in this template. Please <strong>click "Reservation" button</strong> on the top right to see the pop-up reservation form.</p><br><br>
+        
+            <p>You are NOT allowed to redistribute the template ZIP file on any template donwnload website. Please <a href="https://www.tooplate.com/contact" target="_blank">contact us</a> for more information.</p>
+
+        </div>
+</div>
+ 
+
+
+        <div class="team">
+            <div>
+                <h1 id="teamhead">Team Members</h1><br><br>
+              </div>
+              <div class="container3">
+
+                <div class="imgcon">
+                <img src="sophia.jpg" alt="">
+                <h1>Sophia </h1><br>
+                <h2>CEO & FOUNDER</h2><br>
+                </div>
+          
+                <div class="imgcon">
+                  <img src="benjamin.jpg" alt="">
+                  <h1>Benjamin.W</h1><br>
+                  <h2 style="color: rgba(0, 0, 0, 0.978);">Restaurant Manager</h2><br>
+                  </div>
+          
+                  <div class="imgcon">
+                    <img src="muchen.jpg" alt="">
+                    <h1>Muchen Jack</h1><br>
+                    <h2>Denior Chef</h2><br>
+                    </div>
+        </div>
+
+        <div class="ournews">
+            <div id="ourimg">
+                <img src="charles-deluvio-FdDkfYFHqe4-unsplash.jpg" alt="" class="ourimg1">
+            </div>
+
+            <div class="subscribeform">
+                <h1>Our NewsLetter</h1>
+                <h2 id="formcon">The Food News Everyday</h2><br>
+
+                <form class="custom-form" role="form">
+                    <input type="email" name="subscribe-email" id="subscribe-email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Your email address" required=""><br>
+                    <button type="submit" class="form-control" id="subscribe">Subscribe</button><br>
+
+                   <h2 id="formsign">By signing up, you agree to our Privacy Notice and the data policy</h2>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <footer >
+            <div class="footer-site container">
+                  <h4>Crispy Kitchen</h4>
+                  <div class="footer-grid ">
+                      <div class="location">
+                          <h6>Location</h6>
+                          <p>121 Einstein Loop N, Bronx, NY 10475, United States</p>
+                          <button class="btn">Directions</button>
+                      </div>
+                      <div class="opening-hours">
+                          <h6>Opening hours</h6>
+                          <p>Monday - Friday</p>
+                          <p>10:00 AM - 08:00 PM</p>
+                          <p>Tel: 010-02-0340</p>
+                      </div>
+                      <div class="social">
+                          <h6>social</h6>
+                          <div class="media">
+                              <i class="fa fa-facebook"></i>
+                              <i class="fa fa-instagram"></i>
+                              <i class="fa fa-twitter"></i>
+                              <i class="fa fa-youtube"></i>
+                              <i class="fa fa-linkedin"></i>
+  
+                          </div>
+                          <p>Copyright © 2022 Crispy Kitchen Co., <br>
+                              Ltd.</p>
+                          <p>Design: Team 1 of group D</p>
+                      </div>
+                  </div>
+            </div>
+          </footer>
+</div>
+
+<script>
+    let navbar=document.querySelector(".menu-links")
+    let humbergur=document.querySelector(".humburger")
+    let icons=document.querySelectorAll("i")
+
+    humbergur.addEventListener('click', function(event){
+       let isvible=navbar.getAttribute('data-visible');
+        if(isvible == 'true'){
+            navbar.setAttribute('data-visible','false');
+            icons[0].setAttribute('data-visible','true');
+            icons[1].setAttribute('data-visible','false');
+        }
+        else
+        {
+            navbar.setAttribute('data-visible','true');
+            icons[0].setAttribute('data-visible','false');
+            icons[1].setAttribute('data-visible','true');
+        }
+    })
+</script>
+</body>
+</html>
